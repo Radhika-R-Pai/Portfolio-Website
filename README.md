@@ -9,7 +9,8 @@ It has a navigation bar which contains the following
 - **My Journey:** A section about my education and learning.
 - **Skills:** A section about skills.
 - **Projects:** A gallery of my previous projects.
--This website include sections - Home,My Journey,Skills and Projects.
+
+This website include sections - Home,My Journey,Skills and Projects.
 
 A Footer section with relevant links such as  About Me, Contact Me
 and  social media.
