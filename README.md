@@ -5,12 +5,12 @@ This website showcases my work and skills in the fields of web development, desi
 ## Structure
 It has a navigation bar which contains the following
 - **Home Page:** An introduction to who I am and what I do.
-- **About Me:** A webpage about my background, skills, and experience.
+- **About Me:** A website about my background and skills.
 - **My Journey:** A section about my education and learning.
 - **Skills:** A section about skills.
 - **Projects:** A gallery of my previous projects.
 
-This website include sections - Home,My Journey,Skills and Projects.
+This website include sections - Home,My Journey,Skills and Projects and a link to website About me.
 
 A Footer section with relevant links such as  About Me, Contact Me
 and  social media.
