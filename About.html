@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        H1,H3{
+          text-align:center;
+        }
+        P{
+            color:blue;
+            text-align:center;
+        }
+        body{
+            background-color:aqua;
+        }
+        img{
+            display:block;
+            float:right;
+            height:300px;
+        }
+          /* The main content */
+          div {
+            padding: 20px;
+        }
+        
+        /* Default layout for large screens */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        
+        .text-content {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        /* Media Queries for smaller screens */
+        @media (max-width: 768px) {
+            img {
+                height: 250px;
+                margin-left: 0;
+                margin-bottom: 20px;
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+            
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .text-content {
+                text-align: center;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            img {
+                height: 200px;
+            }
+
+            H1 {
+                font-size: 24px;
+            }
+
+            H3 {
+                font-size: 20px;
+            }
+
+            P {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+<H1><u><i>About Me</i></u></H1>
+<div>
+<p>Hi! I am Radhika R Pai</p>
+<img src="RADHIKA R PAI Photograph.jpg">
+<p>I am a Web developer and Coder.I can create and maintain websites, using programming languages like Python, Java and HTML, generally collaborating with UI, UX and marketing teams to optimise the website's performance and user navigation.</p>
+<br>
+<br>
+<H3><i><u>Web Developer</u></i></H3>
+<p>I have done so many projects using html and css.
+I have included them in project section.</p>
+<H3><i><u>Coder</u></i></H3>
+<p>I have done so many projects using java and python.
+I have included them in project section.</p>
+</div>
+</body>
+</html>
