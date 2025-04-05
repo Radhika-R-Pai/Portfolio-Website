@@ -1,4 +1,4 @@
-# Portfolio-Website
+# Portfolio-Website (Index.html and style.css)
 
 This website showcases my work and skills in the fields of web development, design, and technology. It’s designed to highlight my projects and demonstrate my capabilities as a professional.
 
@@ -24,3 +24,5 @@ and  social media.
 This portfolio website was built using the following technologies:
 - **HTML5**: Markup structure of the website
 - **CSS3**: Styling the layout and design
+
+## Website - Index.html and style.css 
