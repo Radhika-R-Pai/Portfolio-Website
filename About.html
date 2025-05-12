@@ -5,58 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <style>
-        H1,H3{
-          text-align:center;
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a2d5f2, #07689f);
+            color: #fff;
+            animation: fadeInBody 2s ease-in;
         }
-        P{
-            color:blue;
-            text-align:center;
+
+        h1, h3 {
+            text-align: center;
+            margin-top: 0;
         }
-        body{
-            background-color:aqua;
+
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            color: #f9f9f9;
+            margin-bottom: 10px;
+            animation: slideDown 1s ease-out;
         }
-        img{
-            display:block;
-            float:right;
-            height:300px;
+
+        h3 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            color: #fdd835;
+            transition: color 0.3s;
         }
-          /* The main content */
-          div {
-            padding: 20px;
+
+        h3:hover {
+            color: #ffffff;
         }
-        
-        /* Default layout for large screens */
+
+        p {
+            color: #e0f7fa;
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 1.1em;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
         .content {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
             flex-wrap: wrap;
+            align-items: center;
+            padding: 30px;
         }
-        
+
         .text-content {
             flex: 1;
             padding: 20px;
+            animation: fadeInUp 2s ease;
         }
-        
-        /* Media Queries for smaller screens */
+
+        img {
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            margin-left: 20px;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Media Queries */
         @media (max-width: 768px) {
-            img {
-                height: 250px;
-                margin-left: 0;
-                margin-bottom: 20px;
-                float: none;
-                display: block;
-                margin: 0 auto;
-            }
-            
             .content {
                 flex-direction: column;
-                align-items: center;
-            }
-            
-            .text-content {
                 text-align: center;
-                padding: 10px;
+            }
+
+            img {
+                height: 250px;
+                margin: 0 auto 20px;
             }
         }
 
@@ -65,34 +90,65 @@
                 height: 200px;
             }
 
-            H1 {
-                font-size: 24px;
+            h1 {
+                font-size: 2em;
             }
 
-            H3 {
-                font-size: 20px;
+            h3 {
+                font-size: 1.5em;
             }
 
-            P {
-                font-size: 16px;
+            p {
+                font-size: 1em;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeInBody {
+            from {background-color: #fff;}
+            to {background: linear-gradient(135deg, #a2d5f2, #07689f);}
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
             }
         }
     </style>
 </head>
 <body>
-<H1><u><i>About Me</i></u></H1>
-<div>
-<p>Hi! I am Radhika R Pai</p>
-<img src="RADHIKA R PAI Photograph.jpg">
-<p>I am a Web developer and Coder.I can create and maintain websites, using programming languages like Python, Java and HTML, generally collaborating with UI, UX and marketing teams to optimise the website's performance and user navigation.</p>
-<br>
-<br>
-<H3><i><u>Web Developer</u></i></H3>
-<p>I have done so many projects using html and css.
-I have included them in project section.</p>
-<H3><i><u>Coder</u></i></H3>
-<p>I have done so many projects using java and python.
-I have included them in project section.</p>
-</div>
+    <h1><u><i>About Me</i></u></h1>
+    <div class="content">
+        <div class="text-content">
+            <p>Hi! I am <strong>Radhika R Pai</strong></p>
+            <p>I am a Web Developer and Coder. I create and maintain websites using languages like Python, Java, and HTML. I collaborate with UI/UX and marketing teams to optimize performance and user experience.</p>
+            <h3><u><i>Web Developer</i></u></h3>
+            <p>I’ve completed many projects using HTML and CSS, which are showcased in the projects section.</p>
+            <h3><u><i>Coder</i></u></h3>
+            <p>I’ve also done several projects using Java and Python, available in the projects section as well.</p>
+        </div>
+        <img src="RADHIKA R PAI Photograph.jpg" alt="Radhika R Pai">
+    </div>
 </body>
 </html>
